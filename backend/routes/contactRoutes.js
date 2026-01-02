@@ -15,15 +15,7 @@ router.get("/", async (req, res) => {
   const contacts = await Contact.find().sort({ createdAt: -1 });
   res.json(contacts);
 });
-// DELETE contact
-router.delete("/:id", async (req, res) => {
-  try {
-    await Contact.findByIdAndDelete(req.params.id);
-    res.json({ message: "Contact deleted successfully" });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
+
 
 
 module.exports = router;
