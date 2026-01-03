@@ -57,7 +57,7 @@ README
 Installation and Setup
 
 Step 1: Clone the Repository
-git clone https://github.com/your-username/contact-management-app.git
+git clone https://github.com/Prayanshi-Sinha/contact-management-app.git
 
 cd contact-management-app
 
